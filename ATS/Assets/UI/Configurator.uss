@@ -1,0 +1,147 @@
+.root {
+    flex-grow: 1;
+    background-color: rgb(32, 34, 38);
+    padding: 16px;
+}
+
+.title {
+    font-size: 22px;
+    -unity-font-style: bold;
+    color: rgb(235, 235, 235);
+    margin-bottom: 12px;
+}
+
+.body {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.options-scroll {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 16px;
+}
+
+.option-group {
+    background-color: rgb(44, 47, 53);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.option-group__header {
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: rgb(210, 210, 210);
+    margin-bottom: 6px;
+}
+
+.option-group__hint {
+    font-size: 11px;
+    color: rgb(150, 150, 150);
+    margin-top: 4px;
+}
+
+.unity-base-field__label,
+.unity-radio-button__text {
+    color: rgb(220, 220, 220);
+}
+
+.addon-toggle {
+    margin-bottom: 2px;
+}
+
+.quantity-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.quantity-row > * {
+    margin-right: 8px;
+}
+
+.quantity-field {
+    width: 60px;
+}
+
+.side-panel {
+    width: 300px;
+}
+
+.validation-panel {
+    background-color: rgb(92, 38, 38);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.validation-panel--visible {
+    display: flex;
+}
+
+.validation-title {
+    -unity-font-style: bold;
+    color: rgb(255, 200, 200);
+    margin-bottom: 4px;
+}
+
+.validation-message {
+    color: rgb(255, 220, 220);
+    font-size: 12px;
+    white-space: normal;
+}
+
+.summary-panel {
+    background-color: rgb(44, 47, 53);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.summary-title {
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: rgb(210, 210, 210);
+    margin-bottom: 6px;
+}
+
+.line-item {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.line-item__label {
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+}
+
+.line-item__value {
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+}
+
+.total-row {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8px;
+    border-top-width: 1px;
+    border-top-color: rgb(70, 70, 70);
+    padding-top: 6px;
+}
+
+.total-caption {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: rgb(235, 235, 235);
+}
+
+.total-label {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: rgb(120, 220, 140);
+}
+
+.total-label--invalid {
+    color: rgb(230, 110, 110);
+}

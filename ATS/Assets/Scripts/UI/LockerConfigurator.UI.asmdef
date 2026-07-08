@@ -1,0 +1,16 @@
+{
+    "name": "LockerConfigurator.UI",
+    "rootNamespace": "LockerConfigurator.UI",
+    "references": [
+        "LockerConfigurator.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

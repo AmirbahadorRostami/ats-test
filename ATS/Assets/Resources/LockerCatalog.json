@@ -1,0 +1,36 @@
+{
+  "_comment": "Starter data for the locker-bank configurator take-home. You may extend this, but don't redefine what's already here in code.",
+
+  "tiers": [
+    { "id": "t1", "label": "Single", "basePrice": 120 },
+    { "id": "t2", "label": "Double", "basePrice": 160 },
+    { "id": "t3", "label": "Triple", "basePrice": 190 }
+  ],
+
+  "doors": [
+    { "id": "metal", "label": "Metal",     "delta": 0 },
+    { "id": "lam",   "label": "Laminate",  "delta": 35 },
+    { "id": "phen",  "label": "Phenolic",  "delta": 70 }
+  ],
+
+  "locks": [
+    { "id": "pad",     "label": "Padlock hasp",    "delta": 0 },
+    { "id": "builtin", "label": "Built-in combo",  "delta": 25 },
+    { "id": "elec",    "label": "Electronic",      "delta": 80 }
+  ],
+
+  "addons": [
+    { "id": "bench",    "label": "Bench",          "delta": 90 },
+    { "id": "slopetop", "label": "Sloped top",     "delta": 40 },
+    { "id": "numbers",  "label": "Number plates",  "delta": 8 }
+  ],
+
+  "rules": [
+    { "type": "incompatible", "a": "lock:elec",       "b": "tier:t3",
+      "msg": "Electronic locks aren't available on triple-tier." },
+    { "type": "incompatible", "a": "addon:slopetop",  "b": "addon:bench",
+      "msg": "Sloped top and bench can't be combined." },
+    { "type": "requires",     "a": "door:phen",       "b": "lock:builtin|lock:elec",
+      "msg": "Phenolic doors require a built-in or electronic lock." }
+  ]
+}

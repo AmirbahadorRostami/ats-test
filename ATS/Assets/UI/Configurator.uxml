@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/Configurator.uss" />
+    <ui:VisualElement name="root" class="root">
+        <ui:Label name="title" text="Locker Bank Configurator" class="title" />
+        <ui:VisualElement name="body" class="body">
+            <ui:ScrollView name="options-scroll" class="options-scroll" />
+            <ui:VisualElement name="side-panel" class="side-panel">
+                <ui:VisualElement name="validation-panel" class="validation-panel" />
+                <ui:VisualElement name="summary-panel" class="summary-panel">
+                    <ui:Label name="summary-title" text="Summary" class="summary-title" />
+                    <ui:VisualElement name="line-items" class="line-items" />
+                    <ui:VisualElement name="total-row" class="total-row">
+                        <ui:Label name="total-caption" text="Total" class="total-caption" />
+                        <ui:Label name="total-label" text="$0" class="total-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
