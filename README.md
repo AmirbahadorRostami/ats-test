@@ -92,3 +92,8 @@ No new code path, no switch statement to extend. `ConfiguratorEngine` calls
 `msg` fires gets shown in the UI as-is. The only thing that would need actual code is a
 third rule type beyond `incompatible`/`requires`.
 
+
+
+# NOTE:
+AI was used in developing this project, mostly used for UI code generation and some minor optomizations.
+
